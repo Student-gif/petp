@@ -93,7 +93,7 @@ class SecondScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text("Second Screen")),
       body: Container(
-          color: const Color.fromARGB(2, 223, 107, 107),
+          color: Color.fromARGB(2, 174, 15, 15),
           child: Column(
             children: [
               ElevatedButton(

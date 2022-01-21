@@ -1,33 +1,20 @@
 class Thematrix {
-  int cell = 1;
-  int cell2 = 0;
-  int cell3 = 0;
-  int cell4 = 0;
-  int cell5 = 0;
-  int cell6 = 0;
-  Thematrix(
-    this.cell,
-    this.cell2,
-    this.cell3,
-    this.cell4,
-    this.cell5,
-    this.cell6,
-  );
-}
-
-Thematrix x = Thematrix(5, 2, 3, 4, 5, 6);
-Thematrix y = Thematrix(1, 2, 3, 4, 5, 6);
-Thematrix c = Thematrix(1, 2, 3, 4, 5, 6);
-Thematrix? addition() {
-  c.cell = x.cell + y.cell;
-  c.cell2 = x.cell2 + y.cell2;
-  c.cell3 = x.cell3 + y.cell3;
-  c.cell4 = x.cell4 + y.cell4;
-  c.cell5 = x.cell5 + y.cell5;
-  c.cell6 = x.cell6 + y.cell6;
-  print(c.cell);
+  static List<List<num>> copyMatrix(List<List<num>> list) {
+    List<List<num>> newlist = [];
+    int index = 0;
+    for (List<num> l in list) {
+      newlist.add([]);
+      for (num d in l) {
+        newlist[index].add(d);
+      }
+      index++;
+    }
+    return newlist;
+  }
 }
 
 void main() {
-  addition();
+  print(Thematrix.copyMatrix([
+    [1, 5, 6, 7, 8]
+  ]));
 }

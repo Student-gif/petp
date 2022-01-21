@@ -25,24 +25,7 @@ class MyApp extends StatelessWidget {
 class SpecShit extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        color: Color.fromARGB(95, 91, 249, 0),
-        width: 600,
-        child: Container(
-          color: Color.fromARGB(31, 244, 1, 1),
-          width: 250,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              TextField(
-                cursorWidth: ,
-              ),
-              TextField(),
-              TextField(),
-              TextField(),
-            ],
-          ),
-        ));
+    return Container(color: Color.fromARGB(95, 91, 249, 0), width: 600);
   }
 }
 
